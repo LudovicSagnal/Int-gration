@@ -1,0 +1,99 @@
+
+
+body {
+    background-image: linear-gradient(0deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,0.4) 100%), url(images/mailBoxes.jpg) ;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    margin-top: 285px;
+    height: 70vh;
+    box-shadow:inset 0px 5px 80px 1px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.top-section1 {
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h4{
+    font-weight: lighter;
+}
+
+ul {
+    list-style:none;
+    margin-top: -20px;
+}
+
+li {
+    margin-top: 30px;
+}
+
+.mail {
+    width: 30%;
+    align-self: center;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.bike {
+    align-self: center;
+    height: 200px;
+    width: 700px;
+    opacity: 0.5;
+}
+
+hr {
+    width: 95%;
+    margin-top: -2px;
+}
+
+.valid {
+    align-self: center;
+    width: 200px;
+    height: 70px;
+}
+
+
+div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.material-symbols-outlined {
+    margin-top: 20px;
+    margin-right: 20px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+input {
+    font-size: 22px;
+    text-align: center;
+}
+
+.valid:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+.bike:hover {
+    transition: 8s;
+    translate: 1500px;
+}
