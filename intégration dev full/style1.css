@@ -96,6 +96,32 @@ span {
     padding: 5px;
 }
 
+span:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px; 
+}
+
+@keyframes shake {
+    
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0) scale(1.1) rotate(-5deg) skew(5deg);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0) scale(1.5) rotate(5deg) skew(-10deg);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0) scale(2) rotate(-5deg) skew(10deg);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0) scale(1.5) rotate(5deg) skew(-5deg);
+      }
+}
+
 img {
     height: 700px;
     width: 100%;
@@ -226,6 +252,95 @@ p {
     
     #cle {
         height: 1000px;
+        grid-row: 2;
+    }
+
+    .lorem3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 350px;
+    }
+
+    #amp {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (min-width: 701px) and (max-width:1000px) {
+
+    h1 {
+        font-size: 40px;
+    }
+    nav {
+        display: flex;
+        color: white;
+        height: 150px;
+        box-shadow: 0 20px 5px rgb(0, 0, 0);
+    }
+    
+    .acc {
+        display: flex;
+        margin-left: 10%;
+        margin-top: 20px;
+        gap: 160px;
+        font-size: 30px;
+    }
+    
+    .prof {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 30px;
+        gap: 25px;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
+
+    img {
+        height: 400px;
+        width: 100%;
+    }
+    
+    .lorem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    
+    p {
+        width: 95%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        height: 1000px;
+    }
+    
+    #cle {
+        height: 1000px;
     }
 
     .lorem3 {
@@ -236,13 +351,19 @@ p {
         width: 100%;
     }
 
+    .lorem3 p {
+        width: 50%;
+    }
+
     #amp {
         width: 100%;
         height: 100px;
     }
+
+
 }
 
-@media (min-width: 701px) and (max-width:1400px) {
+@media (min-width: 1001px) and (max-width:1400px) {
 
     h1 {
         font-size: 40px;
